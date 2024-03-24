@@ -36,8 +36,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && sed -i "/PermitRootLogin prohibit-password/a\PermitRootLogin yes" /etc/ssh/sshd_config \
     && chmod +x /root/setPassword.sh \
     && chmod +x /root/startupService.sh \
-    、
-    
     && sed -i '$a\if [ -f /root/startupService.sh ]; then' /root/.bashrc \
     && sed -i '$a\    . /root/startupService.sh' /root/.bashrc \
     && sed -i '$a\fi' /root/.bashrc \
