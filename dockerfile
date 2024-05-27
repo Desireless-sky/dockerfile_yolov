@@ -1,4 +1,4 @@
-# 设置基础镜像UBUNTU_VERSION变量，默认值为22.04
+# 设置基础镜像UBUNTU_VERSION变量，默认值为24.04
 ARG UBUNTU_VERSION="24.04"
 # 使用变量UBUNTU_VERSION指定基础镜像，并设置别名为system
 FROM ubuntu:${UBUNTU_VERSION} as system
